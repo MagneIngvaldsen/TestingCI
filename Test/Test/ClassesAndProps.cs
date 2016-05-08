@@ -9,7 +9,7 @@ namespace Test
         [TestMethod]
         public void CreateClass()
         {
-            var person = Type.GetType("Tasks.Person");
+            var person = Type.GetType("Tasks.Person, Tasks");
             Assert.IsNotNull(person, "You need to create that person class");
         }
     }
